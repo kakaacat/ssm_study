@@ -12,7 +12,10 @@
         <module>mybatis_01</module>
         <module>mybatis_02</module>
         <module>mybatis_03</module>
-        <module>mybatis_study04</module>
+        <module>mybatis_04</module>
+        <module>mybatis_05</module>
+        <module>mybatis_06</module>
+        <module>mybatis_07</module>
     </modules>
 
     <!--导入依赖-->
