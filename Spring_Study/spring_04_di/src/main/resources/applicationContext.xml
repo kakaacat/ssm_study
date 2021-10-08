@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="address" class="pojo.Address">
+        <property name="address" value="西安"/>
+    </bean>
+
+    <bean id="student" class="pojo.Student">
+        <!--1、普通注入，直接使用value-->
+        <property name="name" value="张三"/>
+        <!-- 2、Bean注入  ref -->
+        <property name="address" ref="address"/>
+<!--        3、数组注入-->
+        <property name="book">
+            <array>
+                <value>红楼梦</value>
+                <value>西游记</value>
+                <value>水浒传</value>
+            </array>
+        </property>
+<!--        4、list-->
+        <property name="hobby">
+            <list>
+                <value>篮球</value>
+                <value>足球</value>
+            </list>
+        </property>
+<!--        5、map-->
+        <property name="card">
+            <map>
+                <entry key="111" value="aaa"/>
+                <entry key="222" value="ddd"/>
+            </map>
+        </property>
+<!--        6、set-->
+        <property name="games">
+            <set>
+                <value>cf</value>
+                <value>lol</value>
+            </set>
+        </property>
+<!--        7、空值-->
+        <property name="wife">
+            <null/>
+        </property>
+<!--        8、properties-->
+        <property name="info">
+            <props>
+                <prop key="违纪记录">无违纪记录</prop>
+                <prop key="性别">男</prop>
+            </props>
+        </property>
+    </bean>
+
+
+</beans>
