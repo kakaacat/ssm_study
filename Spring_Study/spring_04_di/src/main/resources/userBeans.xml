@@ -7,8 +7,8 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- p命名空间注入， 可以直接注入属性的值，property -->
-    <bean id="user" class="pojo.User" p:name="aa" p:age="12"/>
+    <bean id="user" class="User" p:name="aa" p:age="12"/>
     <!-- c命名空间注入， 通过构造器注入，construct-args -->
-    <bean id="user2" class="pojo.User" c:age="123" c:name="dddd"/>
+    <bean id="user2" class="User" c:age="123" c:name="dddd"/>
 
 </beans>
