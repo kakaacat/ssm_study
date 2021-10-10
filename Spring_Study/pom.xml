@@ -16,6 +16,9 @@
         <module>spring_05_autowired</module>
         <module>spring_06_anno</module>
         <module>spring_07_JavaConfig</module>
+        <module>spring_08_proxy</module>
+        <module>spring_09_aop</module>
+        <module>spring_10_mybatis</module>
     </modules>
 
     <dependencies>
