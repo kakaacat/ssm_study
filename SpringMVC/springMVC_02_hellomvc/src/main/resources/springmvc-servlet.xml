@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+    <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
+
+<!--    视图解析器：DispatcherServlet给他的ModelAndView
+        1.获取ModelAndView的数据
+        2.解析ModelAndView的视图名子
+        3.拼接视图名字，找到对应的视图  /WEB-INF/jsp/hello.jsp
+        4.将数据渲染到这个视图上
+-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="InternalResourceView">
+<!--        前缀-->
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+<!--        后缀-->
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+<!--Handler-->
+    <bean id="/hello" class="com.kaka.controller.HelloController"/>
+</beans>
