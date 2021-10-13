@@ -14,6 +14,8 @@
         <module>soringMVC_02_remake</module>
         <module>springMVC_02_remake</module>
         <module>springMVC_03_annotation</module>
+        <module>springMVC_04_controller</module>
+        <module>springMVC_05_json</module>
     </modules>
 
     <dependencies>
