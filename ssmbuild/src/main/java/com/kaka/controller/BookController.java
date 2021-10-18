@@ -23,6 +23,7 @@ public class BookController {
     private BookService bookService;
 
     //查询全部数据，并返回给前端页面
+    @RequestMapping("/allBook")
     public String list(Model model){
         List<Books> list = bookService.queryAllBook();
         model.addAttribute("list", list);
