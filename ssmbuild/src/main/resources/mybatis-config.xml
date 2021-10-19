@@ -5,6 +5,10 @@
 <configuration>
 <!--    配置数据源，交给spring去做-->
 
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+
     <typeAliases>
         <package name="com.kaka.pojo"/>
     </typeAliases>

@@ -18,6 +18,12 @@
                 </h1>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-md-4 column">
+                <a class="btn btn-primary" href="${pageContext.request.contextPath}/book/toAddBook">新增书籍</a>
+            </div>
+        </div>
     </div>
 
     <div class="row clearfix">
@@ -37,6 +43,11 @@
                             <td>${book.bookName}</td>
                             <td>${book.bookCounts}</td>
                             <td>${book.detail}</td>
+                            <td>
+                                <a href="">修改</a>
+                                &nbsp; | &nbsp;
+                                <a href="">删除</a>
+                            </td>
                         </tr>
                     </c:forEach>
                 </tbody>

@@ -1,7 +1,6 @@
 package com.kaka.service;
 
 import com.kaka.pojo.Books;
-import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -20,4 +19,7 @@ public interface BookService {
 
         //查询全部的书
         List<Books> queryAllBook();
+
+        //根据名字查询书籍
+        Books queryBookByName(String bookName);
 }
