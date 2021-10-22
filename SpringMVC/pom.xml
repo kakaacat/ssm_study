@@ -16,6 +16,8 @@
         <module>springMVC_04_controller</module>
         <module>springMVC_05_json</module>
         <module>springMVC_06_aajax</module>
+        <module>springMVC_07_intercepter</module>
+        <module>springMVC_08_file</module>
     </modules>
 
     <dependencies>
