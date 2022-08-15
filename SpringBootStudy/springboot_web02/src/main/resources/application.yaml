@@ -1,0 +1,16 @@
+person:
+  name: sqs
+  age: 2
+  happy: true
+  birth: 2020/1/1
+  maps:
+    k1: v1
+    k2: v2
+# maps: {k1: v1, k2: v2}
+  lists:
+    - l1
+    - l2
+# lists: [l1, l2]
+  dog:
+    name: xiaobai
+    age: 2
