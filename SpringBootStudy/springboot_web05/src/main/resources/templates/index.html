@@ -16,13 +16,15 @@
 		<form class="form-signin" th:action="@{/user/login}">
 			<img class="mb-4" th:src="@{/img/bootstrap-solid.svg}" alt="" width="72" height="72">
 			<h1 class="h3 mb-3 font-weight-normal" th:text="#{login.tip}">Please sign in</h1>
-			<label class="sr-only">Username</label>
+
+			<p style="color:red" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
+
 			<input type="text" name="username" class="form-control" th:placeholder="#{login.username}" required="" autofocus="">
-			<label class="sr-only">Password</label>
+
 			<input type="password" name="password" class="form-control" th:placeholder="#{login.password}" required="">
 			<div class="checkbox mb-3">
 				<label>
-          <input type="checkbox" value="remember-me"> [[#{login.remember}]]
+          <input type="checkbox" value="remember-me">[[#{login.remember}]]
         </label>
 			</div>
 			<button class="btn btn-lg btn-primary btn-block" type="submit">[[#{login.btn}]]</button>
