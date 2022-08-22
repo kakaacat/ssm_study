@@ -19,7 +19,7 @@ public class LoginController {
                         @RequestParam("password") String password,
                         Model model) {
         if (!StringUtils.isEmpty(userName) && "123".equals(password)) {
-            return "dashboard";
+            return "redirect:/main.html";
         } else {
             model.addAttribute("msg", "用户名或密码错误！");
             return "index";
