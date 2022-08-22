@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.thymeleaf.util.StringUtils;
 
 import javax.servlet.http.HttpSession;
+import java.security.Principal;
 
 /**
  * @Author : kaka
@@ -20,7 +21,7 @@ public class LoginController {
     public String login(@RequestParam("username") String userName,
                         @RequestParam("password") String password,
                         Model model, HttpSession session) {
-
+        System.out.println("----->"+userName);
         if (!StringUtils.isEmpty(userName) && "123".equals(password)) {
             session.setAttribute("loginUser", userName);
             return "redirect:/main.html";

@@ -25,15 +25,15 @@ public class MyMvcConfig implements WebMvcConfigurer {
         return new MyLocaleResolver();
     }
 
-
-    @Override
-    public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new LoginHandlerInterceptor())
-                .addPathPatterns("/**")
-                .excludePathPatterns("/index.html",
-                        "/",
-                        "/usr/login",
-                        "/css/**", "/js/**", "/img/**");
-    }
+//
+//    @Override
+//    public void addInterceptors(InterceptorRegistry registry) {
+//        registry.addInterceptor(new LoginHandlerInterceptor())
+//                .addPathPatterns("/**")
+//                .excludePathPatterns("/index.html",
+//                        "/",
+//                        "/usr/login",
+//                        "/css/**", "/js/**", "/img/**");
+//    }
 
 }
